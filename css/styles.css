@@ -13,6 +13,10 @@
     --color4: #cc321c;
 }
 
+section {
+    display: flex;
+}
+
 .text-bg-dark {
     background: linear-gradient(to right, #2c9057, #95b489);
 }
@@ -43,3 +47,26 @@
     animation: rotate 10s linear infinite; /* Ajusta la duración y el tipo de animación según tus preferencias */
 }
 
+#somos {
+    display:block;
+    padding-top: 2em;
+    background-color: var(--color3);
+}
+
+.bg-dark {
+    margin-left: 350px;
+    margin-right: 50px;
+    background-image: url(../img/sandia.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#somos > div:nth-child(2) {
+    margin-left: 350px;
+    margin-right: 50px;
+    color: var(--color1);
+}
+
+#somos > div:last-child >.col-md-6 {
+    width: 100%;
+}
