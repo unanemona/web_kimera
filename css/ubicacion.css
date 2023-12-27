@@ -12,3 +12,33 @@
     --color3: #5a9d77;
     --color4: #cc321c;
 }
+
+.text-bg-dark {
+    background: linear-gradient(to right, #2c9057, #95b489);
+}
+
+.fs-3 {
+    color: var(--color1);
+}
+
+.ubi-link {
+    background-color: var(--color2);
+    text-decoration: underline;
+}
+
+.ubi-link:hover {
+    color: var(--color1);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotating-image {
+    animation: rotate 10s linear infinite; /* Ajusta la duración y el tipo de animación según tus preferencias */
+}
