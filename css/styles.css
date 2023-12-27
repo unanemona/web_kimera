@@ -9,8 +9,10 @@
 :root {
     --color1: #024c22;
     --color2: #ffd600;
-    --color3: #5a9d77;
+    --color3: #95b489;
     --color4: #cc321c;
 }
 
-
+.text-bg-dark .nav-link {
+    color: var(--color1);
+}

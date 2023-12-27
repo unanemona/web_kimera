@@ -6888,8 +6888,8 @@ textarea.form-control-lg {
 }
 
 .text-bg-dark {
-  color: #fff !important;
-  background-color: RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 1)) !important;
+  color: #024c22 !important;
+  background-color: #95b489 !important;
 }
 
 .link-primary {
