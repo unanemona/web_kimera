@@ -70,3 +70,7 @@ section {
 #somos > div:last-child >.col-md-6 {
     width: 100%;
 }
+
+#somos > div:last-child {
+    padding-bottom: 2em;
+}

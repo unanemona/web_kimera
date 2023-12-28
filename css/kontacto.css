@@ -9,7 +9,7 @@
 :root {
     --color1: #024c22;
     --color2: #ffd600;
-    --color3: #5a9d77;
+    --color3: #95b489;
     --color4: #cc321c;
 }
 
@@ -41,4 +41,45 @@
 
 .rotating-image {
     animation: rotate 10s linear infinite; /* Ajusta la duración y el tipo de animación según tus preferencias */
+}
+
+section {
+    display: flex;
+}
+
+#kontacto {
+    margin-left: 300px;
+}
+
+.fst-italic {
+    padding-top: 19px;
+}
+
+#kontacto .nav-item a {
+    text-decoration: none;
+    color: var(--color1);
+    font-size: 0.9em;
+}
+
+#kontacto .nav-item a:hover{
+    text-decoration: none;
+    color: var(--color2);
+}
+
+#kontacto .nav-item i {
+    color: var(--color1);
+    margin-right: 3px; 
+}
+
+#foto {
+    padding-left: 600px;
+}
+
+#foto strong{
+    margin-left: 50px;
+    background-color: var(--color2);
+}
+
+#foto marquee {
+    padding-top: 2.5em;
 }
