@@ -9,7 +9,7 @@
 :root {
     --color1: #024c22;
     --color2: #ffd600;
-    --color3: #5a9d77;
+    --color3: #95b489;
     --color4: #cc321c;
 }
 
@@ -41,4 +41,28 @@
 
 .rotating-image {
     animation: rotate 10s linear infinite; /* Ajusta la duración y el tipo de animación según tus preferencias */
+}
+
+section {
+    display: flex;
+}
+
+#ubi {
+    margin-left: 300px;
+}
+
+.fst-italic {
+    padding-top: 19px;
+}
+
+#horarios {
+    padding-left: 600px;
+}
+
+.carousel-caption h5, .carousel-caption p {
+     color: #ffd600;
+}
+
+.carousel-item img {
+    filter: brightness(50%);
 }
