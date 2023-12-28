@@ -10,10 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/af7c8133a0.js" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
 </head>
 <body>
 
+    <section id="menu">
     <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 300px; position: fixed; height: 100vh;">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
             <img src="img/kimera_logo.png" alt="logo" class="kimera-logo" style="width: 70%;">
@@ -53,7 +55,114 @@
         </ul>
         <img src="img/gif_01.png" alt="gif_01" class="rotating-image" style="width: 60%;">
     </div>
+    </section>
+
+
+<section id="inicio">
+    <div class="container-fluid search-div d-flex flex-column justify-content-center align-items-center">
+        <form class="form-search d-flex" action="">
+            <select id="category" class="select-search">
+                <option value="Todas">Todas las categorías</option>
+                <option value="Herr">Herramientas de jardinería</option>
+                <option value="Semillas">Semillas y tierras</option>
+                <option value="Plantas">Plantas</option>
+                <option value="Acessorios">Accessorios</option>
+            </select><input class="search-input" type="text" placeholder="Búsqueda"><button
+                class="button-search" type="submit" value="Search">Buscar</button>
+        </form>
+    </div>
+</section>
     
+<section class="hot-ads">
+    <div class="container">
+        <h2 class="mb-3">PRODUCTOS DESTACADOS</h2>
+        <div class="gallery">
+            <hr class="my-1 mb-4">
+            <div class="gallery-cell mb-4 d-flex">
+                <img class="hot-ads-img" src="img/macetas_01.jpg" alt="macetas">
+                <div class="hot-ads-description ml-2">
+                    <h3 class="hot-ad-name fw-bold">Módulo de jardinería</h3>
+                    <p class="description-big d-none d-md-block h-light-font">¡Explora la evolución del jardín comunitario hacia la 
+                        portabilidad! De un sueño verde, hemos adoptado tecnologías innovadoras  para cultivar alimentos frescos durante 
+                        todo el año. Nuestro jardín portátil rompe barreras geográficas y climáticas, permitiendo que la comunidad cultive en cualquier lugar. Esta iniciativa ha fortalecido los lazos entre vecinos, proporcionando un espacio para eventos y la cosecha de productos locales. Únete a la revolución verde con nuestro kit de huerto portátil, 
+                        haciendo que la frescura esté al alcance de todos. ¡Conviértete en parte de este emocionante viaje hacia un futuro más sostenible y comunitario!
+                    </p>
+                    <div class="brand-cat-info">
+                        <p class="text-nowrap"><span class="fw-bold">Opiniones: </span><span
+                                class="g-light-font"></span> ★★★★★ 5/5</p>
+                    </div>
+                    <div>
+                        <a class="hot-ads-link-1" href="#">
+                            <span>
+                                720€
+                            </span>
+                        </a>
+                        <a class="hot-ads-link-2" href="#">
+                            <span class="text-nowrap">
+                                <i class="fas fa-shopping-cart"></i> + INFO
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-1 mb-4">
+            <div class="gallery-cell mb-4 d-flex">
+                <img class="hot-ads-img" src="img/macetas_01.jpg" alt="macetas">
+                <div class="hot-ads-description ml-2">
+                    <h3 class="hot-ad-name fw-bold">Maceta Reacondicionada</h3>
+                    <p class="description-big d-none d-md-block h-light-font">Macetas hechas de cajas de envio recicladas
+                        con interior reforzado de cerámica. Cuenta con cuatro agujeros interiores para el drenaje y existe opción sin ruedas
+                        y con ruedas para mayor portabilidad.
+                    </p>
+                    <div class="brand-cat-info">
+                        <p class="text-nowrap"><span class="fw-bold">Opiniones: </span><span
+                                class="g-light-font"></span> ★★★★☆ 4/5</p>
+                    </div>
+                    <div>
+                        <a class="hot-ads-link-1" href="#">
+                            <span>
+                                20€
+                            </span>
+                        </a>
+                        <a class="hot-ads-link-2" href="#">
+                            <span class="text-nowrap">
+                                <i class="fas fa-shopping-cart"></i> + INFO
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-1 mb-4">
+            <div class="gallery-cell mb-4 d-flex">
+                <img class="hot-ads-img" src="img/macetas_01.jpg" alt="macetas">
+                <div class="hot-ads-description ml-2">
+                    <h3 class="hot-ad-name fw-bold">Bulbos de Tulipán</h3>
+                    <p class="description-big d-none d-md-block h-light-font">Los tulipanes son de floración primaveral, 
+                        florecen en primavera y se pueden plantar en otoño, de octubre a diciembre.
+                        Los siempre populares tulipanes proporcionan los más bellos colores y formas. Es por ello que son de gran valor en el jardín, o en el balcón. ¿Quién no está contento con esta flor?
+                    </p>
+                    <div class="brand-cat-info">
+                        <p class="text-nowrap"><span class="fw-bold">Opiniones: </span><span
+                                class="g-light-font"></span> ★★★★★ 5/5</p>
+                    </div>
+                    <div>
+                        <a class="hot-ads-link-1" href="#">
+                            <span>
+                                4€
+                            </span>
+                        </a>
+                        <a class="hot-ads-link-2" href="#">
+                            <span class="text-nowrap">
+                                <i class="fas fa-shopping-cart"></i> + INFO
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     
 </body>
 </html>
