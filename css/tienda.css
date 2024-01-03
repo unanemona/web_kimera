@@ -4,6 +4,12 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Roboto Mono', monospace;
+    background-color:   #95b489;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+  
 }
 
 :root {
@@ -14,7 +20,7 @@
 }
 
 .text-bg-dark {
-    background: linear-gradient(to right, #2c9057, #95b489);
+    background-color:  #95b489;
 }
 
 .fs-3 {
@@ -136,3 +142,82 @@ section {
     background-color: var(--color2);
 }
   
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* Ajustes para el menú */
+    #menu {
+        width: 100%;
+        position: relative;
+        transition: transform 0.3s ease;
+        transform: translateY(0);
+    }
+
+    #menu img {
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    #menu ul {
+        padding-top: 20px;
+    }
+
+    #menu.menu-hidden {
+        transform: translateY(-100%);
+    }
+
+    /* Ajustes para la sección de inicio */
+    #inicio {
+        margin-left: 0;
+        padding-top: 45em;
+    }
+
+    /* Ajustes para la barra de búsqueda */
+    .search-div {
+        height: auto;
+        padding: 1em;
+    }
+
+    .form-search {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .select-search,
+    .search-input,
+    .button-search {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    /* Ajustes para la sección de anuncios destacados */
+    .hot-ads {
+        margin-left: 0;
+        padding: 1em;
+    }
+
+    .hot-ads-img {
+        max-width: 100%;
+    }
+    .gallery-cell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .hot-ads-description {
+        margin-top: 1em;
+    }
+  
+
+    .hot-ad-name {
+        font-size: 1.2em;
+    }
+
+    .hot-ads-link-1,
+    .hot-ads-link-2 {
+        width: 100%;
+    } }
