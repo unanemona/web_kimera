@@ -34,6 +34,41 @@ section {
     color: var(--color1);
 }
 
+.p-4s {
+    background-color: var(--color3); /* Color de fondo */
+    color: var(--color1); /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.p-4s h1 {
+    font-size: 2em; /* Tamaño de la fuente del encabezado */
+}
+
+.p-4s p {
+    font-size: 1.2em; /* Tamaño de la fuente del párrafo */
+    line-height: 1.6; /* Altura de línea del párrafo */
+}
+
+.p-4s a {
+    color: var(--color2); /* Color del enlace */
+    text-decoration: none; /* Quitar subrayado del enlace */
+    font-weight: bold; /* Peso de la fuente del enlace */
+}
+
+.p-4s a:hover {
+    color: var(--color1); /* Color del enlace al pasar el ratón */
+}
+    .p-4s {
+        display: flex;
+        justify-content: flex-end; /* Alinea el bloque a la derecha */
+    }
+
+    .p-4s .col-md-6 {
+        width: 50%; /* Utiliza la mitad del ancho disponible en pantallas grandes */
+    }
+
+
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -48,29 +83,66 @@ section {
 }
 
 #somos {
-    display:block;
+    display: block;
     padding-top: 2em;
     background-color: var(--color3);
 }
 
-.bg-dark {
-    margin-left: 350px;
-    margin-right: 50px;
-    background-image: url(../img/sandia.jpeg);
-    background-size: cover;
-    background-position: center;
-}
-
 #somos > div:nth-child(2) {
-    margin-left: 350px;
-    margin-right: 50px;
+    margin-left: 0; /* Cambiado a 0 para pantallas pequeñas */
+    margin-right: 0; /* Cambiado a 0 para pantallas pequeñas */
     color: var(--color1);
 }
 
-#somos > div:last-child >.col-md-6 {
+#somos > div:last-child > .col-md-6 {
     width: 100%;
 }
 
 #somos > div:last-child {
     padding-bottom: 2em;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    .bg-dark {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #menu {
+        width: 100%;
+        position: relative;
+        transition: transform 0.3s ease;
+        transform: translateY(0);
+    }
+
+    #menu img {
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    #menu ul {
+        padding-top: 20px;
+    }
+
+    #menu.menu-hidden {
+        transform: translateY(-100%);
+    }
+
+    /* Modificación para cambiar la posición de .p-4s */
+    .p-4s {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        order: 1; /* Cambia el orden para poner .p-4s después del menú */
+        padding-top: 50em;
+    }
+
+    .p-4s .col-md-6 {
+        width: 100%;
+    }
 }
