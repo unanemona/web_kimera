@@ -196,5 +196,15 @@ section {
 
     .p-4s .col-md-6 {
         width: 100%;
+ 
     }
+
+   #footer {
+    height:300px;
+   }
+
+   #footer img {
+    width:300px;
+    height: auto;
+   }
 }
