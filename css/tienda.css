@@ -221,3 +221,8 @@ section {
     .hot-ads-link-2 {
         width: 100%;
     } }
+    .gallery-cell img {
+        max-width: 20%;
+        height: auto;
+    }
+    

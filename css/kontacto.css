@@ -118,3 +118,17 @@ section {
 #menu.menu-hidden {
     transform: translateY(-100%);
 }
+
+@media screen and (max-width: 767px) {
+    .d-flex .flex-column .flex-shrink-0 .p-3 {
+        margin-left: 0;
+        width: 100%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #95b489;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+}

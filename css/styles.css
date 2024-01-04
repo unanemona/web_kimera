@@ -10,6 +10,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #95b489;
   
 }
 
@@ -114,6 +115,7 @@ section {
 }
 
 .rotating-image {
+    
     animation: rotate 10s linear infinite; /* Ajusta la duración y el tipo de animación según tus preferencias */
 }
 
@@ -140,6 +142,17 @@ section {
     margin-bottom: 0;
     background-color: #95b489;
 }
+#footer {
+    margin-top: 20px; /* Elimina el margen superior */
+    padding-top: 20px; /* Elimina el espacio interno superior */
+    border-top: 0px; /* Elimina cualquier borde superior */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100px; /* Ajusta la altura según sea necesario */
+    background-color: #95b489;
+}
+
 
 @media screen and (max-width: 767px) {
     body {
