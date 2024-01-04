@@ -4,21 +4,35 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Roboto Mono', monospace;
+    background-color:   #95b489;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+  
+}
+
 
 :root {
     --color1: #024c22;
     --color2: #ffd600;
     --color3: #95b489;
     --color4: #cc321c;
+    background-color:   #95b489;
+}
+
+
+section {
+    display: flex;
 }
 
 .text-bg-dark {
-    background: linear-gradient(to right, #2c9057, #95b489);
+    background:  #95b489;
 }
 
 .fs-3 {
-    color: var(--color1);
+    color: #95b489;
 }
 
 .kontacto-link {
@@ -82,4 +96,25 @@ section {
 
 #foto marquee {
     padding-top: 2.5em;
+}
+
+.menu {
+    background-color: #95b489;
+    margin-bottom: 0px; /* Agrega un margen negativo para que el menú se deslice hacia arriba */
+}
+
+#menu {
+    width: 100%;
+    position: relative;
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+    padding: 10px;
+}
+
+#menu ul {
+    padding-top: 20px;
+}
+
+#menu.menu-hidden {
+    transform: translateY(-100%);
 }
