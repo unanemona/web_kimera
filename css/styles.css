@@ -207,4 +207,14 @@ section {
     width:300px;
     height: auto;
    }
+
+}
+
+@media(min-width:430px){
+    #menu div{
+        height: unset !important;
+    }
+    #somos .p-4s{
+        padding-top: 27em !important;
+    }
 }

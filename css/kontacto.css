@@ -65,7 +65,7 @@ section {
     display: flex;
 }
 #kontacto {
-    width: 100%;
+    /* width: 100%; */
     max-width: 300px;
     position: fixed;
     height: 100vh;
@@ -94,9 +94,9 @@ section {
     margin-right: 3px; 
 }
 
-#foto {
-    padding-left: 600px;
-}
+/* #foto {
+    width: 500px;
+} */
 
 #foto strong{
     margin-left: 50px;
@@ -129,7 +129,7 @@ section {
 }
 
 #footer-container {
-    padding-top: 10px;
+    margin-top: 10px;
     padding-bottom: 10px;
     background-color: #95b489;
     text-align: center;
@@ -149,19 +149,42 @@ section {
     max-width: 20%;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 932px) {
     body {
         font-size: 14px;
     }
 
-    /* Ajustes para el menú */
-    #menu {
+    #foto-todo {
+        height: 100%;
         width: 100%;
+        position: absolute;
+    }
+
+    #foto-img {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .kontacto-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu {
+        width: 50%;
         position: relative;
+        z-index: 2;
         transition: transform 0.3s ease;
         transform: translateY(0);
-        
+
     }
+
+    #menu-todo, li, #kontacto-p {
+        background-color: transparent;
+    }
+
+    
 
     #menu img {
         width: 70%;
@@ -176,13 +199,19 @@ section {
         transform: translateY(-100%);
     }
 
-    #kontacto {
-        width: 100%;
-        max-width: 300px;
-        position: fixed;
-        height: 100vh;
+    #kontacto-p {
+        width: 50rem;
+        position: absolute;
+        top: 27rem;
+        height: 400vh;
         background-color: #95b489;
-        margin-left: 300px; /* Se agregó este margen izquierdo */
+        margin-left: -300px;
+        font-size: 20px;
+    }
+
+    #kontacto-p p {
+        width: 15rem;
+        text-align: justify;
     }
     
     #kontacto .kontacto-section {
@@ -202,4 +231,29 @@ section {
         width: 80%; /* Ajusta el ancho del footer en dispositivos más pequeños */
     }
    
+}
+
+@media(min-width:430px){
+    #kontacto-p{
+        height: unset!important;
+        position: unset;
+        width: unset;
+    }
+    #kontacto{
+        height: unset;
+        position:unset;
+    }
+    #foto-todo{
+        /* height: unset !important; */
+        position: unset;
+        margin-top: 0;
+    }
+    #kontacto-p p {
+        width: 22rem!important;
+    }
+
+    #footer-container {
+        z-index: 1;
+        /* display: none; */
+    }
 }

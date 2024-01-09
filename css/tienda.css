@@ -10,6 +10,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #95b489;
 }
 
 :root {
@@ -83,6 +84,7 @@ section {
     width: 70%;
     margin-right: 0.7em;
 }
+
 
 .button-search {
     background-color: var(--color1);
@@ -213,5 +215,9 @@ section {
     }
     .hot-ads-link-2 {
         width: fit-content;
+    }
+} @media(min-width:430px){
+    #menu div{
+        height: unset !important;
     }
 }
