@@ -245,15 +245,13 @@ section {
     }
     #foto-todo{
         /* height: unset !important; */
-        position: unset;
-        margin-top: 0;
+        display: none; 
     }
     #kontacto-p p {
         width: 22rem!important;
     }
 
-    #footer-container {
-        z-index: 1;
-        /* display: none; */
+    #footer-img {
+        display: none; 
     }
 }
