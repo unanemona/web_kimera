@@ -65,7 +65,7 @@ section {
 
 .form-search {
     height: 30px;
-    width: 70%;
+   
 }
 
 .select-search {
@@ -144,6 +144,14 @@ section {
     background-color: var(--color2);
 }
 
+.gifquegira {
+    padding: 40px;
+}
+
+.gifquegira img {
+    width: 100%;
+}
+
 @media screen and (max-width: 767px) {
     body {
         font-size: 14px;
@@ -216,8 +224,12 @@ section {
     .hot-ads-link-2 {
         width: fit-content;
     }
+    
 } @media(min-width:430px){
     #menu div{
         height: unset !important;
     }
+    
 }
+
+
