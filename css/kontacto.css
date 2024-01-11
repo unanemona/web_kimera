@@ -64,10 +64,10 @@ section {
 section {
     display: flex;
 }
-#kontacto {
-    /* width: 100%; */
+#kontacto-p {
+    width: 100%; 
     max-width: 300px;
-    position: fixed;
+    position: relative;
     height: 100vh;
     background-color: #95b489;
     margin-left: 0; /* Cambia el margen izquierdo a cero */
@@ -94,18 +94,7 @@ section {
     margin-right: 3px; 
 }
 
-/* #foto {
-    width: 500px;
-} */
 
-#foto strong{
-    margin-left: 50px;
-    background-color: var(--color2);
-}
-
-#foto marquee {
-    padding-top: 2.5em;
-}
 
 .menu {
     background-color: #95b489;
@@ -136,18 +125,19 @@ section {
     position: fixed;
     bottom: 0;
     width: 100%; /* Ajusta el ancho al 100% */
+    height: 20%;
 }
 
-#footer {
-    width: 60%;
-    margin: 0 auto;
-    align-self: center;
+.fotodelfooter {
+    padding: 30%;
 }
 
 #footer .rotating-image {
-    width: 20%;
-    max-width: 20%;
+    width: 10%;
+    
 }
+
+
 
 @media screen and (max-width: 932px) {
     body {
@@ -210,8 +200,9 @@ section {
     }
 
     #kontacto-p p {
-        width: 15rem;
+        width: 20rem;
         text-align: justify;
+
     }
     
     #kontacto .kontacto-section {
@@ -220,7 +211,7 @@ section {
         align-items: center;
         width: 100%;
         order: 1; /* Cambia el orden para poner .p-4s después del menú */
-       
+        z-index: 9999;
         padding-top: 200px;
     }
     
@@ -228,12 +219,15 @@ section {
     
 
     #footer-container > #footer {
-        width: 80%; /* Ajusta el ancho del footer en dispositivos más pequeños */
+        width: 100%; /* Ajusta el ancho del footer en dispositivos más pequeños */
     }
    
 }
 
-@media(min-width:430px){
+@media screen and (min-width:375px){
+    #menu-todo {
+
+    }
     #kontacto-p{
         height: unset!important;
         position: unset;
@@ -242,16 +236,22 @@ section {
     #kontacto{
         height: unset;
         position:unset;
+       
     }
     #foto-todo{
         /* height: unset !important; */
         display: none; 
     }
     #kontacto-p p {
-        width: 22rem!important;
+        width: 16rem!important;
     }
 
     #footer-img {
         display: none; 
+        
+    }
+    #footer-container {
+        height: auto; /* Altura automática según el contenido */
+        z-index: 9999;
     }
 }
